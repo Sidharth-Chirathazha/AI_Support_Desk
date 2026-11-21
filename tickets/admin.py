@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Ticket, TicketMessage
+from .models import Ticket, TicketMessage, AIReplyDraft
 
 
 @admin.register(Ticket)
@@ -43,3 +43,5 @@ class TicketMessageAdmin(admin.ModelAdmin):
     )
 
     list_filter = ("is_ai_generated",)
+
+admin.site.register(AIReplyDraft)

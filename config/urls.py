@@ -26,4 +26,9 @@ urlpatterns = [
         "api/ai/",
         include("ai_engine.urls")
     ),
+
+    path(
+        "api/tickets/",
+        include("tickets.urls")
+    ),
 ]

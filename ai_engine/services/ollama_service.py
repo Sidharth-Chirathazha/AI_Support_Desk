@@ -22,7 +22,7 @@ class OllamaService:
         system_prompt: str,
         user_prompt: str,
         temperature: float = 0.2,
-        response_format: str = "json"
+        response_format=None
     ) -> str:
 
         try:
